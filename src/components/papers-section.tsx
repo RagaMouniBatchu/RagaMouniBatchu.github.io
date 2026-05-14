@@ -3,10 +3,24 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { FileText, Clock, Image } from "lucide-react";
+import { FileText, Clock, Image, BookMarked } from "lucide-react";
 import { motion } from "framer-motion";
 
-const papers = [
+type Paper = {
+    title: string;
+    /** Shown when statusBadges is not set */
+    status?: string;
+    /** Multiple badges, e.g. Thesis + Published */
+    statusBadges?: string[];
+    description: string;
+    tags: string[];
+    link: string;
+    isPoster?: boolean;
+    isReport?: boolean;
+    isThesis?: boolean;
+};
+
+const papers: Paper[] = [
     {
         title: "A Survey on Data Visualization Techniques for International Trade",
         status: "Published",
@@ -22,19 +36,28 @@ const papers = [
         link: "https://www.mdpi.com/2073-431X/15/1/20"
     },
     {
+        title: "Real-Time Isolated ASL Recognition: Evaluating Spatial-Temporal Networks and Multimodal LLMs",
+        statusBadges: ["Thesis", "Published"],
+        description:
+            "Master's thesis (West Chester University, Computer Science; Spring 2026). Published in WCU Digital Commons. This thesis investigates the deployment of high-accuracy Isolated ASL Recognition (ISLR) in resource-constrained edge environments. We train a lightweight Spatio-Temporal Attention Network (SSTAN, ~2.7 M parameters, ~10 MB) on the WLASL-100 benchmark, achieving 75.25% Top-1 and 88.24% Top-5 accuracy with 139 ms CPU-only inference. A systematic comparison against frontier multimodal LLMs (Gemini 3 Flash, Gemini 3.1 Pro, Qwen 3 VL) shows SSTAN outperforms the best LLM baseline by ~1.85× in accuracy while being 22–230× faster and up to 40× cheaper annually. The LLMs' core limitation is a lack of fine-grained temporal perception; they impose English-language semantic priors rather than learning the articulatory distinctions that define ASL signs. To demonstrate practical impact, we integrate the model into a browser-based ASL Word Search Game where users sign words via webcam instead of typing, grounding vocabulary practice in embodied, gesture-driven interaction.",
+        tags: ["ASL", "Edge ML", "Thesis", "Digital Commons"],
+        link: "https://digitalcommons.wcupa.edu/all_capstones/64/",
+        isThesis: true
+    },
+    {
         title: "KG-RAG for Tox21: Explainable Drug Toxicity Prediction",
-        status: "Research",
+        status: "Submitted",
         description: "Developing a knowledge graph-based RAG application for toxicity prediction, integrating Tox21, PubChem, DSSTox, ChemBL, UniProt and Reactome data products.",
         tags: ["GraphRAG", "Neo4j", "Bioinformatics", "LLMs"],
         link: "/Poster.jpeg",
         isPoster: true
     },
     {
-        title: "ASL Word Search Puzzle",
-        status: "Research",
-        description: "Gamifying ASL learning through interactive word search puzzles, enhancing engagement and vocabulary retention.",
-        tags: ["Gamification", "ASL", "Education"],
-        link: "#"
+        title: "ASL Recognition & Game-Based Learning",
+        status: "Published",
+        description: "ASL learning game with a custom backtracking-based puzzle generator and a spatial-temporal Transformer for gloss recognition, achieving 89% Top-5 accuracy on the WLASL dataset. Published in Computers (MDPI).",
+        tags: ["Gamification", "ASL", "Accessibility", "MDPI"],
+        link: "https://www.mdpi.com/2073-431X/15/5/299"
     },
     {
         title: "ChatGPT in Education",
@@ -59,6 +82,19 @@ const papers = [
         isReport: true
     }
 ];
+
+function statusLabels(paper: Paper): string[] {
+    if (paper.statusBadges?.length) return paper.statusBadges;
+    if (paper.status) return [paper.status];
+    return [];
+}
+
+function badgeVariant(label: string): "default" | "secondary" | "outline" {
+    if (label === "Published") return "default";
+    if (label === "Thesis") return "outline";
+    if (label === "Submitted") return "secondary";
+    return "secondary";
+}
 
 const isLinkAvailable = (link: string) => link && link !== "#";
 
@@ -89,10 +125,12 @@ export function PapersSection() {
                     >
                         <Card className="h-full flex flex-col hover:border-primary/50 transition-colors bg-card/50 backdrop-blur-sm">
                             <CardHeader>
-                                <div className="flex justify-between items-start mb-2 gap-2">
-                                    <Badge variant={paper.status === "Published" ? "default" : "secondary"}>
-                                        {paper.status}
-                                    </Badge>
+                                <div className="flex flex-wrap justify-start items-start mb-2 gap-2">
+                                    {statusLabels(paper).map((label) => (
+                                        <Badge key={label} variant={badgeVariant(label)}>
+                                            {label}
+                                        </Badge>
+                                    ))}
                                 </div>
                                 <CardTitle className="text-xl leading-snug">{paper.title}</CardTitle>
                                 <CardDescription className="mt-2 text-sm">
@@ -112,9 +150,11 @@ export function PapersSection() {
                                 {isLinkAvailable(paper.link) ? (
                                     <Button variant="default" size="sm" className="w-full" asChild>
                                         <a href={paper.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                                            {(paper as { isPoster?: boolean }).isPoster ? (
+                                            {paper.isThesis ? (
+                                                <><BookMarked className="w-4 h-4" /> View Thesis (Digital Commons)</>
+                                            ) : paper.isPoster ? (
                                                 <><Image className="w-4 h-4" /> Read Poster</>
-                                            ) : (paper as { isReport?: boolean }).isReport ? (
+                                            ) : paper.isReport ? (
                                                 <><FileText className="w-4 h-4" /> Read Report</>
                                             ) : (
                                                 <><FileText className="w-4 h-4" /> Read Paper</>

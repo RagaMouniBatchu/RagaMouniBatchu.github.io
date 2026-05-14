@@ -61,7 +61,7 @@ export function NavBar() {
                 </div>
                 <div className="ml-2 pl-2 border-l hidden sm:block">
                     <Button size="sm" className="rounded-full" asChild>
-                        <Link href="/Raga Mouni Batchu Resume_v5.pdf" target="_blank">Resume</Link>
+                        <Link href="/Raga%20Mouni%20Batchu%20Resume%20v4.pdf" target="_blank">Resume</Link>
                     </Button>
                 </div>
             </nav>

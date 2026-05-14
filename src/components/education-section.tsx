@@ -9,21 +9,24 @@ const education = [
     {
         school: "West Chester University of Pennsylvania",
         degree: "Master of Science in Computer Science",
-        date: "Current",
-        gpa: "CGPA: 4.0/4.0",
+        date: "01/2025 – 05/2026",
+        gpa: "GPA: 4.0/4.0",
         location: "West Chester, PA"
     },
     {
-        school: "Sri Vishnu Engineering College for Women",
+        school: "Shri Vishnu Engineering College for Women",
         degree: "Bachelor of Technology in Computer Science",
-        date: "May 2019",
+        date: "06/2015 – 05/2019",
         gpa: "CGPA: 9.0/10",
         location: "India"
     }
 ];
 
 const certifications = [
-    "Generative AI with Large Language Models",
+    "AWS Certified AI Practitioner",
+    "Generative AI with Large Language Models (Coursera)",
+    "Introduction to Model Context Protocol (Anthropic)",
+    "Introduction to Agent Skills (Anthropic)",
     "ConsenSys Certified Ethereum Blockchain Developer",
     "Google AI Agents Intensive Course (2025)",
     "AWS SHE Builds Mentorship Program (2025)",

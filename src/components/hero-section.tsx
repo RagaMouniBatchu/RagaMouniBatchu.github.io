@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download, FileText } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -44,7 +44,7 @@ export function HeroSection() {
                         </Link>
                     </Button>
                     <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base" asChild>
-                        <Link href="/Raga Mouni Batchu Resume_v5.pdf" target="_blank">
+                        <Link href="/Raga%20Mouni%20Batchu%20Resume%20v4.pdf" target="_blank">
                             <FileText className="mr-2 h-4 w-4" /> Resume
                         </Link>
                     </Button>

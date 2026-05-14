@@ -4,10 +4,10 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 const skills = {
-    "Languages": ["Java", "Node.js", "Python", "C++", "Perl", "TypeScript", "SQL", "Solidity"],
-    "AI & ML": ["PyTorch", "Hugging Face", "Transformers", "LangChain", "Vertex AI", "RAG", "GraphRAG", "Agentic AI", "Fine-tuning", "LoRA", "LLMs", "Knowledge Graphs"],
-    "Cloud & DevOps": ["AWS (S3, EC2, RDS, SQS, SSM)", "CloudWatch", "CloudFront", "Kubernetes", "Docker", "Jenkins", "Grafana", "Prometheus", "Kafka", "Graylog"],
-    "Web & Database": ["React", "Next.js", "Spring Boot", "PostgreSQL", "MongoDB", "Neo4j", "GraphQL", "Hasura", "JDBC", "JSP"],
+    "Languages": ["Python", "Java", "JavaScript", "TypeScript", "C++", "Perl", "SQL", "Solidity"],
+    "AI & ML": ["PyTorch", "Hugging Face Transformers", "LangChain", "LangGraph", "Vertex AI", "PySpark", "RAG", "GraphRAG", "Agentic AI", "Fine-tuning", "LoRA", "LLM Evaluation", "Prompt Engineering", "Knowledge Graphs"],
+    "Cloud & DevOps": ["AWS (S3, EC2, ECS, Lambda, RDS, SQS, SSM, EventBridge, Bedrock)", "CloudWatch", "CloudFront", "Terraform", "Terragrunt", "Kubernetes", "Docker", "Jenkins", "CI/CD", "Grafana", "Prometheus", "Kafka", "Graylog"],
+    "Web & Database": ["React", "Next.js", "Angular", "Spring Boot", "Node.js", "FastAPI", "PostgreSQL", "MongoDB", "DynamoDB", "Snowflake", "Neo4j", "GraphQL", "Hasura", "REST APIs", "JDBC", "JSP"],
     "Blockchain": ["Ethereum", "Solidity", "Web3", "Smart Contracts"],
 };
 

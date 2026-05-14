@@ -5,6 +5,14 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
+        title: "AI Engineer Intern",
+        company: "iPipeline",
+        location: "Pennsylvania, United States",
+        date: "01/2026 – Current",
+        description: "Architected an agentic digitization service using AWS Bedrock and Python to map complex paper-based forms to digital templates via high-dimensional vector similarity matching. Engineered a scalable event-driven stack with Terraform, EventBridge, and SQS for asynchronous document processing with durable storage and automated metadata in DynamoDB. Built high-performance MCP servers to ingest and validate insurance data, turning unstructured inputs into structured representations. Integrated LLM tool-calling with MCP servers to automate form-filling and quote retrieval, bridging natural language instructions and legacy insurance APIs.",
+        tags: ["AWS Bedrock", "Terraform", "MCP", "EventBridge", "LLM Tool-Calling"]
+    },
+    {
         title: "Research Assistant",
         company: "West Chester University of Pennsylvania",
         location: "West Chester, PA",
