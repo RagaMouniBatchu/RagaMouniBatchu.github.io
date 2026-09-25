@@ -15,7 +15,7 @@ export function AboutSection() {
                 >
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">About Me</h2>
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                        Experienced <span className="text-foreground font-semibold">software and AI engineer</span> with <span className="text-foreground font-semibold">5+ years</span> in designing, developing, and maintaining scalable solutions.
+                        Experienced <span className="text-foreground font-semibold">software and AI engineer</span> with <span className="text-foreground font-semibold">6+ years</span> in designing, developing, and maintaining scalable solutions.
                         I bring strong experience in <span className="text-primary font-semibold">cloud technologies</span>, <span className="text-primary font-semibold">backend development</span>,
                         and research applying <span className="text-primary font-semibold">GraphRAG</span> and <span className="text-primary font-semibold">agentic AI</span>, including migrating legacy systems to microservices, reducing cost and improving operational visibility.
                     </p>
