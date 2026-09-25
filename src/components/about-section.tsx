@@ -17,7 +17,7 @@ export function AboutSection() {
                     <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                         Experienced <span className="text-foreground font-semibold">software and AI engineer</span> with <span className="text-foreground font-semibold">5+ years</span> in designing, developing, and maintaining scalable solutions.
                         I bring strong experience in <span className="text-primary font-semibold">cloud technologies</span>, <span className="text-primary font-semibold">backend development</span>,
-                        and research applying <span className="text-primary font-semibold">GraphRAG</span> and <span className="text-primary font-semibold">agentic AI</span>, including migrating legacy systems to microservices—reducing cost and improving operational visibility.
+                        and research applying <span className="text-primary font-semibold">GraphRAG</span> and <span className="text-primary font-semibold">agentic AI</span>, including migrating legacy systems to microservices, reducing cost and improving operational visibility.
                     </p>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         I completed my Master&apos;s in Computer Science at West Chester University with a 4.0 GPA (Spring 2026), with thesis work on real-time isolated ASL recognition and multimodal LLM evaluation.
