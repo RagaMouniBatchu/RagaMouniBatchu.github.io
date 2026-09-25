@@ -24,12 +24,12 @@ const experiences = [
         title: "Research Assistant",
         company: "West Chester University of Pennsylvania",
         location: "West Chester, PA",
-        date: "04/2025 – Current",
+        date: "04/2025 – 05/2026",
         description: "Conducting research on knowledge graphs and LLM applications. Leading work on GraphRAG for toxicity prediction using Tox21 and PubChem datasets. Investigating Multi-Head Latent Attention and RoPE effects on Telugu language models. Contributing to accessibility research including bidirectional ASL translation and gamified ASL learning tools.",
         tags: ["GraphRAG", "LLM Research", "NLP", "Accessibility"]
     },
     {
-        title: "Senior Member of Technical Staff",
+        title: "Senior Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2023 – 08/2024",
@@ -37,7 +37,7 @@ const experiences = [
         tags: ["Microservices", "System Design", "Leadership", "Scrum Master"]
     },
     {
-        title: "Member of Technical Staff",
+        title: "Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2021 – 05/2023",
@@ -45,7 +45,7 @@ const experiences = [
         tags: ["Java", "SMS/Email Services", "Vendor Integration"]
     },
     {
-        title: "Associate Member of Technical Staff",
+        title: "Associate Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2019 – 05/2021",

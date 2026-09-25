@@ -44,7 +44,7 @@ export function HeroSection() {
                         </Link>
                     </Button>
                     <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base" asChild>
-                        <Link href="/Raga%20Mouni%20Batchu%20Resume%20v4.pdf" target="_blank">
+                        <Link href="/Raga_Mouni_Batchu_Resume_Latest.pdf" target="_blank">
                             <FileText className="mr-2 h-4 w-4" /> Resume
                         </Link>
                     </Button>
