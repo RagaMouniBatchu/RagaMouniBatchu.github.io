@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const skills = {
     "Languages": ["Python", "Java", "JavaScript", "TypeScript", "C++", "Perl", "SQL", "Solidity"],
-    "AI & ML": ["PyTorch", "Hugging Face Transformers", "LangChain", "LangGraph", "Vertex AI", "PySpark", "RAG", "GraphRAG", "Agentic AI", "Fine-tuning", "LoRA", "LLM Evaluation", "Prompt Engineering", "Knowledge Graphs"],
-    "Cloud & DevOps": ["AWS (S3, EC2, ECS, Lambda, RDS, SQS, SSM, EventBridge, Bedrock)", "CloudWatch", "CloudFront", "Terraform", "Terragrunt", "Kubernetes", "Docker", "Jenkins", "CI/CD", "Grafana", "Prometheus", "Kafka", "Graylog"],
-    "Web & Database": ["React", "Next.js", "Angular", "Spring Boot", "Node.js", "FastAPI", "PostgreSQL", "MongoDB", "DynamoDB", "Snowflake", "Neo4j", "GraphQL", "Hasura", "REST APIs", "JDBC", "JSP"],
+    "AI & ML": ["PyTorch", "Hugging Face Transformers", "LangChain", "LangGraph", "Vertex AI", "PySpark", "RAG", "GraphRAG", "Agentic AI", "Fine-tuning", "LoRA", "LLM Evaluation", "Prompt Engineering", "Knowledge Graphs", "Gemini", "Multimodal Extraction", "LLM Tool Calling", "Prompt & KV Caching", "LLM Cost Optimization"],
+    "Cloud & DevOps": ["AWS (S3, EC2, ECS, Lambda, RDS, SQS, SSM, EventBridge, Bedrock)", "CloudWatch", "CloudFront", "Terraform", "Terragrunt", "Kubernetes", "Docker", "Jenkins", "CI/CD", "Grafana", "Prometheus", "Kafka", "Graylog", "Google Cloud Run", "Firebase", "Cloudflare Workers", "Supabase Edge Functions", "Serverless", "GitHub Actions"],
+    "Web & Database": ["React", "Next.js", "Angular", "Spring Boot", "Node.js", "FastAPI", "PostgreSQL", "MongoDB", "DynamoDB", "Snowflake", "Neo4j", "GraphQL", "Hasura", "REST APIs", "JDBC", "JSP", "Supabase", "Vite", "Tailwind CSS", "Vitest", "Gmail API", "Webhooks", "OAuth 2.0"],
     "Blockchain": ["Ethereum", "Solidity", "Web3", "Smart Contracts"],
 };
 
