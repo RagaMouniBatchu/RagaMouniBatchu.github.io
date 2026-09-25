@@ -5,10 +5,18 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
+        title: "Lead AI Engineer",
+        company: "PennText Education",
+        location: "Pennsylvania, United States",
+        date: "05/2026 – Current",
+        description: "Built the multimodal extraction pipeline for LAYERS, PennText's memory platform, with Gemini on Vertex AI; evaluated quality, latency, and cost, and shipped a 3-tier fallback cascade that cut cost ~68% within a 150s SLA. Optimized Gemini prompts and inference with stable prompt prefixes for implicit KV caching, concise tool-call arguments, and parallel execution of independent tool calls to reduce latency and token usage. Built CoursePackPlus with a multi-turn AI interview and RAG enrichment pipeline to generate publishable coursepacks, with GitHub-webhook sync into LAYERS. Deployed containerized AI services on Google Cloud Run with Firebase and Vertex AI, and delivered CRM and lead-pipeline automation using serverless functions and the Gmail API.",
+        tags: ["Gemini", "Vertex AI", "Cloud Run", "RAG", "Firebase"]
+    },
+    {
         title: "AI Engineer Intern",
         company: "iPipeline",
         location: "Pennsylvania, United States",
-        date: "01/2026 – Current",
+        date: "01/2026 – 05/2026",
         description: "Architected an agentic digitization service using AWS Bedrock and Python to map complex paper-based forms to digital templates via high-dimensional vector similarity matching. Engineered a scalable event-driven stack with Terraform, EventBridge, and SQS for asynchronous document processing with durable storage and automated metadata in DynamoDB. Built high-performance MCP servers to ingest and validate insurance data, turning unstructured inputs into structured representations. Integrated LLM tool-calling with MCP servers to automate form-filling and quote retrieval, bridging natural language instructions and legacy insurance APIs.",
         tags: ["AWS Bedrock", "Terraform", "MCP", "EventBridge", "LLM Tool-Calling"]
     },
