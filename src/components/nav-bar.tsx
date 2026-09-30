@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 const navItems = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Papers", href: "#papers" },
     { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
 ];
 
