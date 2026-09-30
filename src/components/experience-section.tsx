@@ -29,7 +29,7 @@ const experiences = [
         tags: ["GraphRAG", "LLM Research", "NLP", "Accessibility"]
     },
     {
-        title: "Senior Member of Technical Staff",
+        title: "Senior Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2023 – 08/2024",
@@ -37,7 +37,7 @@ const experiences = [
         tags: ["Microservices", "System Design", "Leadership", "Scrum Master"]
     },
     {
-        title: "Member of Technical Staff",
+        title: "Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2021 – 05/2023",
@@ -45,7 +45,7 @@ const experiences = [
         tags: ["Java", "SMS/Email Services", "Vendor Integration"]
     },
     {
-        title: "Associate Member of Technical Staff",
+        title: "Associate Software Engineer",
         company: "athenahealth",
         location: "Bengaluru, India",
         date: "06/2019 – 05/2021",

@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Zap, Clock, ExternalLink } from "lucide-react";
+import { Github, Zap, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -139,11 +139,6 @@ export function ProjectsSection() {
                                     {isLinkAvailable(project.github) && (
                                         <Button variant="outline" size="sm" className="w-full" asChild>
                                             <a href={project.github} target="_blank" rel="noopener noreferrer"><Github className="mr-2 h-4 w-4" /> Code</a>
-                                        </Button>
-                                    )}
-                                    {!isLinkAvailable(project.link) && !isLinkAvailable(project.github) && (
-                                        <Button variant="outline" size="sm" className="w-full bg-muted/50 text-muted-foreground cursor-not-allowed" disabled>
-                                            <Clock className="w-4 h-4 mr-2" /> In Progress
                                         </Button>
                                     )}
                                 </CardFooter>

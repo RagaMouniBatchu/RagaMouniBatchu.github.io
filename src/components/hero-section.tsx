@@ -19,15 +19,6 @@ export function HeroSection() {
                 transition={{ duration: 0.5 }}
                 className="container px-4"
             >
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                    className="mb-6 inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-sm"
-                >
-                    Open for Research & Development Roles
-                </motion.div>
-
                 <h1 className="mb-6 text-5xl font-extrabold tracking-tight sm:text-7xl md:text-8xl bg-gradient-to-b from-foreground to-foreground/50 bg-clip-text text-transparent">
                     Raga Mouni Batchu
                 </h1>
@@ -44,7 +35,7 @@ export function HeroSection() {
                         </Link>
                     </Button>
                     <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base" asChild>
-                        <Link href="/Raga%20Mouni%20Batchu%20Resume%20v4.pdf" target="_blank">
+                        <Link href="/Raga%20Mouni%20Batchu%20Resume%20v6.pdf" target="_blank">
                             <FileText className="mr-2 h-4 w-4" /> Resume
                         </Link>
                     </Button>
