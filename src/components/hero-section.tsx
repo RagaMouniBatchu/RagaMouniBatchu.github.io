@@ -19,15 +19,6 @@ export function HeroSection() {
                 transition={{ duration: 0.5 }}
                 className="container px-4"
             >
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                    className="mb-6 inline-block rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary backdrop-blur-sm"
-                >
-                    Open for Research & Development Roles
-                </motion.div>
-
                 <h1 className="mb-6 text-5xl font-extrabold tracking-tight sm:text-7xl md:text-8xl bg-gradient-to-b from-foreground to-foreground/50 bg-clip-text text-transparent">
                     Raga Mouni Batchu
                 </h1>
