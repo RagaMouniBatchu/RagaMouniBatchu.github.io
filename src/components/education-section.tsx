@@ -34,6 +34,7 @@ const certifications = [
 ];
 
 const awards = [
+    "Outstanding Graduate Student Award - West Chester University, College of Sciences & Mathematics",
     "Starlight Award (4 consecutive releases) - athenahealth",
     "Winner, ConsenSys India Blockchain Hackathon 2018",
     "University Innovation Fellow - Stanford University",
